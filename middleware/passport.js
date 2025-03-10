@@ -5,7 +5,7 @@ const userModel = require("../models/user")
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENTID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:4433/api/v1/auth/google"
+    callbackURL: "https://ecommerce-hub-ykfb.onrender.com/api/v1/auth/google"
   },
   async(accessToken, refreshToken, profile, cb) =>  {
     // console.log(profile)
