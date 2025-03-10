@@ -19,6 +19,9 @@ router.post("/make_admin/:userId", adminAuth, changeUserToAdmin)
 
 
 router.post("/forgot_password", authenticate, adminAuth2, forgotPassword)
+router.get("/", (req, res) => {
+    res.send("Judah For Life")
+})
 
 
 router.post("/resend-verification", resendVerificationEmail)
